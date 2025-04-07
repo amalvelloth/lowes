@@ -27,7 +27,7 @@
 }
 
 .cards-section {
-  padding: 5rem 2rem;
+  padding: 5rem 0;
   background-color: #f7f7f7;
   font-family: "Barlow", sans-serif;
 }
@@ -64,6 +64,13 @@
 }
 .cards-section .story-card {
   background: white;
+}
+.cards-section .story-img {
+  height: 290px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
 }
 
 .filter-select:focus {

@@ -37,7 +37,7 @@ $font-family: "Barlow", sans-serif;
 
 
 .cards-section {
-  padding: 5rem 2rem;
+  padding: 5rem 0;
   background-color: $background-light;
   font-family: $font-family;
 
@@ -73,6 +73,13 @@ $font-family: "Barlow", sans-serif;
   .story-card {
     background: white;
   }
+  .story-img {
+    height: 290px;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  
 }
 
 
