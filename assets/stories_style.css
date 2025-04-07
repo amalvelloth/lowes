@@ -1,15 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-.stories-banner {
+.banner-section {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  background: black;
   height: 50vh;
   background-image: url("../assets/Assets/stories-banner.svg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
-
 @media (min-width: 991px) {
   .banner-section {
     padding-left: 4rem;
@@ -20,9 +20,19 @@
   max-width: 1400px;
 }
 .banner-section .nav-path {
+  display: flex;
+  align-content: center;
+  margin-bottom: 1rem;
+}
+.banner-section .nav-path .nav-path-link {
+  color: white;
+  text-decoration: none;
   font-size: 14px;
+  font-weight: 500;
+  margin: 0 0.5rem 0 0;
 }
 .banner-section .banner-title {
+  margin: 0;
   color: white;
 }
 
@@ -40,27 +50,20 @@
 .cards-section .container-fluid {
   max-width: 1400px;
 }
-.cards-section h2 {
-  font-size: 24px;
-  font-weight: 500;
-}
-.cards-section h6 {
-  font-size: 12px;
-  font-weight: 600;
-}
-.cards-section p {
-  color: #666666;
-  font-size: 12px;
-  font-weight: 400;
-}
-.cards-section .lorem {
-  font-size: 20px;
-  font-weight: 500;
-  color: black;
+.cards-section .card-section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
 }
 .cards-section label {
   font-size: 12px;
   font-weight: 600;
+}
+.cards-section .banner-section-title {
+  margin-bottom: 0;
+  font-size: 24px;
+  font-weight: 500;
 }
 .cards-section .story-card {
   background: white;
@@ -72,13 +75,54 @@
      object-fit: cover;
   display: block;
 }
+.cards-section .card-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cards-section .card-tag {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 600;
+  color: #004990;
+}
+.cards-section .card-date {
+  margin: 0;
+  color: #666666;
+  font-size: 12px;
+  font-weight: 400;
+}
+.cards-section .card-description {
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 500;
+  color: black;
+}
+.cards-section .more-link {
+  color: #004990;
+  font-weight: 500;
+}
+.cards-section button.btn a {
+  color: white;
+  text-decoration: none;
+}
 
-.filter-select:focus {
+.category-filter {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.category-filter .filter-label {
+  color: #004990;
+  margin-bottom: 0.25rem;
+}
+.category-filter .filter-select {
+  padding: 0.5rem 2rem 0.5rem 0.5rem;
+  color: #858585;
+  border-radius: 0;
+}
+.category-filter .filter-select:focus {
   border-color: #4a90e2;
   box-shadow: 0 0 5px rgba(74, 144, 226, 0.5);
   outline: none;
-}
-
-.form-select {
-  border-radius: 0px;
 }/*# sourceMappingURL=stories_style.css.map */

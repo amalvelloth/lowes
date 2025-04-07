@@ -5,19 +5,17 @@ $secondary-color: #666666;
 $background-light: #f7f7f7;
 $font-family: "Barlow", sans-serif;
 
-.stories-banner {
+.banner-section {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  background: black;
   height: 50vh;
   background-image: url("../assets/Assets/stories-banner.svg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
-
-.banner-section {
   @media (min-width: 991px) {
     padding-left: 4rem;
     padding-right: 4rem;
@@ -27,14 +25,22 @@ $font-family: "Barlow", sans-serif;
     max-width: 1400px;
   }
   .nav-path {
-    font-size: 14px;
+    display: flex;
+    align-content: center;
+    margin-bottom: 1rem;
+    .nav-path-link {
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      margin: 0 0.5rem 0 0;
+    }
   }
   .banner-title {
+    margin: 0;
     color: white;
   }
-  
 }
-
 
 .cards-section {
   padding: 5rem 0;
@@ -48,27 +54,20 @@ $font-family: "Barlow", sans-serif;
   .container-fluid {
     max-width: 1400px;
   }
-  h2 {
-    font-size: 24px;
-    font-weight: 500;
-  }
-  h6 {
-    font-size: 12px;
-    font-weight: 600;
-  }
-  p {
-    color: $secondary-color;
-    font-size: 12px;
-    font-weight: 400;
-  }
-  .lorem {
-    font-size: 20px;
-    font-weight: 500;
-    color: black;
+  .card-section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
   }
   label {
     font-size: 12px;
     font-weight: 600;
+  }
+  .banner-section-title {
+    margin-bottom: 0;
+    font-size: 24px;
+    font-weight: 500;
   }
   .story-card {
     background: white;
@@ -79,17 +78,57 @@ $font-family: "Barlow", sans-serif;
     object-fit: cover;
     display: block;
   }
-  
-}
-
-
-.filter-select {
-  &:focus {
-    border-color: $primary-color;
-    box-shadow: 0 0 5px rgba($primary-color, 0.5);
-    outline: none;
+  .card-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
-} 
-.form-select {
-  border-radius: 0px;
+  .card-tag {
+    margin: 0;
+    font-size: 12px;
+    font-weight: 600;
+    color: #004990;
+  }
+  .card-date {
+    margin: 0;
+    color: $secondary-color;
+    font-size: 12px;
+    font-weight: 400;
+  }
+  .card-description {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+  }
+  .more-link {
+    color: #004990;
+    font-weight: 500;
+  }
+  
+  button.btn a {
+    color: white;
+    text-decoration: none;
+  }
 }
+
+.category-filter {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  .filter-label {
+    color: #004990;
+    margin-bottom: 0.25rem;
+  }
+  .filter-select {
+    padding: 0.5rem 2rem 0.5rem 0.5rem;
+    color: #858585;
+    border-radius: 0;
+    &:focus {
+      border-color: $primary-color;
+      box-shadow: 0 0 5px rgba($primary-color, 0.5);
+      outline: none;
+    }
+  }
+}
+
